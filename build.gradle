@@ -11,8 +11,13 @@ apply plugin: 'net.minecraftforge.gradle.forge'
 //Only edit below this line, the above code adds and enables the nessasary things for Forge to be setup.
 
 
+version = "0.0.1"
+group= "com.meelock.crystalized-crops" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = "crystalized-crops"
 
+sourceCompatibility = targetCompatibility = "1.7" // Need this here so eclipse task generates correctly.
 compileJava {
+    sourceCompatibility = targetCompatibility = "1.7" // Change this if people complain...
 }
 
 minecraft {
