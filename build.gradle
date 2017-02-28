@@ -10,8 +10,6 @@ buildscript {
 apply plugin: 'net.minecraftforge.gradle.forge'
 //Only edit below this line, the above code adds and enables the nessasary things for Forge to be setup.
 
-
-version = "0.0.1"
 group= "com.meelock.crystalized-crops" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "crystalized-crops"
 
@@ -20,10 +18,21 @@ compileJava {
     sourceCompatibility = targetCompatibility = "1.7" // Change this if people complain...
 }
 
+
+ext.configFile = file "build.properties"
+
+configFile.withReader {
+    def prop = new Properties()
+    prop.load(it)
+    project.ext.config = new ConfigSlurper().parse prop
+}
+
+version = config.version
+
 minecraft {
-    version = "1.10.2-12.18.3.2239"
+    version = config.minecraft.version
     runDir = "run"
-    
+
     // the mappings can be changed at any time, and must be in the following format.
     // snapshot_YYYYMMDD   snapshot are built nightly.
     // stable_#            stables are built at the discretion of the MCP team.
@@ -32,6 +41,7 @@ minecraft {
     mappings = "snapshot_20161111"
     // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
 }
+
 
 dependencies {
     // you may put jars on which you depend on in ./libs
