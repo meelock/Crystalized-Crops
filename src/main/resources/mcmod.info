@@ -1,0 +1,16 @@
+[
+{
+  "modid": "crystalized-crops",
+  "name": "Crystalized Crops",
+  "description": "Crystalized Crops is a mod similar to (atleast will be similar) magical crops/mystical crops/what ever mods are like this - this mod adds hopefully vanilla ballenced "crystalized" crops.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Meelock"],
+  "credits": "The Forge and FML guys, for making forge.",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
