@@ -1,4 +1,4 @@
-# Crystalized-Crops
+# Crystallized-Crops
 
 
 Crystalized Crops is a mod similar to (atleast will be similar) magical crops/mystical crops/what ever mods are like this - this mod adds hopefully vanilla ballenced "crystalized" crops.
