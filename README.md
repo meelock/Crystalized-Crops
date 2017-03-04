@@ -6,7 +6,7 @@ Crystalized Crops is a mod similar to (atleast will be similar) magical crops/my
 
 lore:
 
-crystailzed crops are some sort of mutated flower, that has joined with a living crystal. This living crystal grows with the plant, and is the heart of said plant. Just about any plant can be mutated by these crystals, so that it is intended that crops from this mod are living crystals instead of "magical" plants, however it is planned that a form of automation for these crops will be added.
+Crystaillzed crops are some sort of mutated flower, that has joined with a living crystal. This living crystal grows with the plant, and is the heart of said plant. Just about any plant can be mutated by these crystals, so that it is intended that crops from this mod are living crystals instead of "magical" plants, however it is planned that a form of automation for these crops will be added.
 
 
 [WARNING I MAY BE GOING OFF THE DEEP END]
