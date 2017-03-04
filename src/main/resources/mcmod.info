@@ -1,14 +1,14 @@
 [
 {
-  "modid": "crystalized-crops",
-  "name": "Crystalized Crops",
-  "description": "Crystalized Crops is a mod similar to (atleast will be similar) magical crops/mystical crops/what ever mods are like this - this mod adds hopefully vanilla ballenced "crystalized" crops.",
+  "modid": "crystallizedcrops",
+  "name": "Crystallized Crops",
+  "description": "Crystalized Crops is a mod similar to (atleast will be similar) magical crops/mystical crops/what ever mods are like this - this mod adds hopefully vanilla ballenced \"crystalized\" crops.",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
   "authorList": ["Meelock"],
-  "credits": "The Forge and FML guys, for making forge. Chicken bones, for helping with the build script (i copied part of his...)",
+  "credits": "The Forge and FML guys, for making forge. Chicken bones, for helping with the build script (i copied part of his...) Mcjty, for making his awesome tutorial of awesomeness! (link: http://modwiki.temporal-reality.com )",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
