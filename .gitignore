@@ -1,0 +1,5 @@
+.gradle/gradle.log
+.gradle/2.14/taskArtifacts
+.idea
+build
+run
