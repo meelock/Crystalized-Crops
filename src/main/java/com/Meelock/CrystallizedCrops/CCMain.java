@@ -15,7 +15,7 @@ public class CCMain {
 
     public static final String MODID = "crystallizedcrops";
     public static final String MODNAME = "Crystallized Crops";
-    public static final String MODVERSION = "1.10.2-0.0.1";
+    public static final String MODVERSION = "0.0.1-0.0.1";
 
     @SidedProxy(clientSide = "com.Meelock.CrystallizedCrops.Proxy.ClientProxy", serverSide = "com.Meelock.CrystallizedCrops.Proxy.ServerProxy")
     public static CommonProxy proxy;

@@ -8,14 +8,12 @@ import org.apache.logging.log4j.Level;
 
 public class Config {
 
-    private static final String CATEGORY_WORLDGEN = "worldgen";
-    private static final String CATEGORY_INTEGRATION = "integration";
-    private static final String CATIGORY_RENDER = "render";
+    private static final String CATEGORY_GENERAL = "general";
+    private static final String CATEGORY_DIMENSIONS = "dimensions";
 
     // This values below you can access elsewhere in your mod:
     public static boolean CCWorldGeneration = true;
-    public static boolean CCTEIntegration = true;
-    public static boolean CCThreeDItems = true;
+    public static String yourRealName = "Steve";
 
     // Call this from CommonProxy.preInit(). It will create our config if it doesn't
     // exist yet and read the values if it does exist.
@@ -24,8 +22,7 @@ public class Config {
         try {
             cfg.load();
             initGeneralConfig(cfg);
-            initIntegrationConfig(cfg);
-            initRenderConfig(cfg);
+            initDimensionConfig(cfg);
         } catch (Exception e1) {
             CCMain.logger.log(Level.ERROR, "Problem loading config file!", e1);
         } finally {
@@ -36,20 +33,14 @@ public class Config {
     }
 
     private static void initGeneralConfig(Configuration cfg) {
-        cfg.addCustomCategoryComment(CATEGORY_WORLDGEN, "General configuration");
+        cfg.addCustomCategoryComment(CATEGORY_GENERAL, "General configuration");
         // cfg.getBoolean() will get the value in the config if it is already specified there. If not it will create the value.
-        CCWorldGeneration = cfg.getBoolean("CCWorldGeneration", CATEGORY_WORLDGEN, CCWorldGeneration, "Set to false to turn of world gen.");
-
+        CCWorldGeneration = cfg.getBoolean("CCWorldGeneration", CATEGORY_GENERAL, CCWorldGeneration, "Set to false to turn of world gen.");
+        yourRealName = cfg.getString("realName", CATEGORY_GENERAL, yourRealName, "Set your real name here");
     }
 
-    private static void initIntegrationConfig(Configuration cfg) {
-        cfg.addCustomCategoryComment(CATEGORY_INTEGRATION, "Mod Integration");
-        CCTEIntegration = cfg.getBoolean("TEIntegration", CATEGORY_INTEGRATION, CCTEIntegration, "Set to false to turn off thermal expansion ore crystals.");
+    private static void initDimensionConfig(Configuration cfg) {
+        cfg.addCustomCategoryComment(CATEGORY_DIMENSIONS, "Dimension configuration");
 
-    }
-
-    public static void initRenderConfig(Configuration cfg) {
-        cfg.addCustomCategoryComment(CATIGORY_RENDER, "CC Render Control");
-        CCThreeDItems = cfg.getBoolean("CCIntegration", CATIGORY_RENDER, CCThreeDItems, "Set to false to turn off 3D items and tools.");
     }
 }
