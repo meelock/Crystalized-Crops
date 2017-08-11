@@ -10,7 +10,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class CCrystal extends Block {
     public CCrystal() {
         super(Material.ROCK);
-        setUnlocalizedName(CCMain.MODID + ".CCrystal");     // Used for localization (en_US.lang)
+        setUnlocalizedName(CCMain.MODID + ".ccrystal");     // Used for localization (en_US.lang)
         setRegistryName("ccrystal");        // The unique name (within your mod) that identifies this block
         GameRegistry.register(this);
         GameRegistry.register(new ItemBlock(this), getRegistryName());

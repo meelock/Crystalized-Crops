@@ -13,9 +13,9 @@ apply plugin: 'net.minecraftforge.gradle.forge'
 group= "com.meelock.crystalized-crops" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "crystalized-crops"
 
-sourceCompatibility = targetCompatibility = "1.7" // Need this here so eclipse task generates correctly.
+sourceCompatibility = targetCompatibility = "1.8" // Need this here so eclipse task generates correctly.
 compileJava {
-    sourceCompatibility = targetCompatibility = "1.7" // Change this if people complain...
+    sourceCompatibility = targetCompatibility = "1.8" // Change this if people complain...
 }
 
 
