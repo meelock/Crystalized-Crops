@@ -1,11 +1,15 @@
 package com.Meelock.CrystallizedCrops.Blocks;
 
 
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class CCBlocks {
-    public static CCrystal ccrystal;
+        public static CCrystal ccrystal;
 
-    public static void init() {
-        ccrystal = new CCrystal();
+    @SideOnly(Side.CLIENT)
+    public static void initModels() {
+        ccrystal.initModel();
     }
+
 }

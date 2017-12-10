@@ -15,10 +15,8 @@ public class PotionEvent {
         if (event.getEntityLiving().isPotionActive(CCMain.mysteriousPoison)) {
             if (event.getEntityLiving().getActivePotionEffect(CCMain.mysteriousPoison).getDuration() == 0) {
                 event.getEntityLiving().removePotionEffect(CCMain.mysteriousPoison);
-                System.out.println("click");
-                return;
-            } else if (event.getEntityLiving().worldObj.getTotalWorldTime() % 200 == 0) {
-                event.getEntityLiving().attackEntityFrom(DamageSource.generic, 2);
+            } else if (event.getEntityLiving().world.getTotalWorldTime() % 200 == 0) {
+                event.getEntityLiving().attackEntityFrom(DamageSource.GENERIC, 2);
             }
         }
     }

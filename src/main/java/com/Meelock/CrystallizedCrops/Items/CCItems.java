@@ -1,6 +1,7 @@
 package com.Meelock.CrystallizedCrops.Items;
 //Created initially by Meelock on 3/3/2017.
 
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
@@ -31,10 +32,10 @@ public class CCItems {
         epsilon_crystal = new CCVanillaCrystal("item_epsilon_crystal", "epsilon_crystal");
         basic_crystal_1 = new CCVanillaCrystal("item_basic_crystal_1", "basic_crystal_1");
         basic_crystal_2 = new CCVanillaCrystal("item_basic_crystal_2", "basic_crystal_2");
-        d_crystite_dust = new CCItem("item_d_crystite_dust", "d_crystalized_dust");
-        d_crystite_ingot = new CCItem("item_d_crystite_ingot", "d_crystite_ingot");
-        l_crystite_dust = new CCItem("item_l_crystite_dust", "l_crystite_dust");
-        l_crystite_ingot = new CCItem("item_l_crystite_ingot", "l_crystite_ingot");
+        d_crystite_dust = new CCItem("item_d_crystite_dust", "d_crystalized_dust").setCreativeTab(CreativeTabs.MATERIALS);
+        d_crystite_ingot = new CCItem("item_d_crystite_ingot", "d_crystite_ingot").setCreativeTab(CreativeTabs.MATERIALS);
+        l_crystite_dust = new CCItem("item_l_crystite_dust", "l_crystite_dust").setCreativeTab(CreativeTabs.MATERIALS);
+        l_crystite_ingot = new CCItem("item_l_crystite_ingot", "l_crystite_ingot").setCreativeTab(CreativeTabs.MATERIALS);
     }
 
     @SideOnly(Side.CLIENT)
